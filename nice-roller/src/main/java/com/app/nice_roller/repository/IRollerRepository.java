@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface IRollerRepository extends JpaRepository<Roller,Long> {
-    List<Roller> fingByDisponibilitéTrue();
+public interface IRollerRepository extends JpaRepository<Roller, Long> {
+    List<Roller> findByDisponibilitéTrue();
 }
