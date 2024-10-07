@@ -6,7 +6,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "clients")
-public class Client {
+public class Client extends AbstractAuditingEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

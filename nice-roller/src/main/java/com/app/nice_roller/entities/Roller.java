@@ -6,7 +6,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "rollers")
-public class Roller {
+public class Roller extends AbstractAuditingEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Entity
 @Data
 @Table(name = "locations")
-public class Location {
+public class Location extends AbstractAuditingEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

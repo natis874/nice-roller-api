@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Entity
 @Data
 @Table(name = "paiements")
-public class Paiement {
+public class Paiement extends AbstractAuditingEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

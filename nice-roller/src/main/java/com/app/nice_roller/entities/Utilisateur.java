@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Utilisateur {
+public class Utilisateur extends AbstractAuditingEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
