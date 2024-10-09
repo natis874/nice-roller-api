@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/nice-roller.iml" filepath="$PROJECT_DIR$/.idea/nice-roller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/nice-roller-api.iml" filepath="$PROJECT_DIR$/.idea/nice-roller-api.iml" />
     </modules>
   </component>
 </project>
