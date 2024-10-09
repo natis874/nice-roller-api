@@ -51,7 +51,7 @@ public class IRollerServiceImpl implements IRollerService {
 
     @Override
     public List<RollerDTO> getAvailableRollers() {
-        return rollerRepository.findByDisponibilitéTrue().stream()
+        return rollerRepository.findByDisponibiliteTrue().stream()
                 .map(rollerMapper::toDTO)
                 .collect(Collectors.toList());
     }

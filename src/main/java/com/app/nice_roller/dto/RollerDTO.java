@@ -7,5 +7,5 @@ public class RollerDTO {
     private Long id;
     private String marque;
     private String taille;
-    private boolean disponibilité;
+    private boolean disponibilite;
 }

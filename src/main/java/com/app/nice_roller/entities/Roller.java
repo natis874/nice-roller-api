@@ -12,9 +12,9 @@ public class Roller extends AbstractAuditingEntity{
     private Long id;
 
     private String marque;
-    private String modèle;
+    private String modele;
     private String taille;
-    private Boolean disponibilité;
-    private String état;
+    private Boolean disponibilite;
+    private String etat;
 
 }

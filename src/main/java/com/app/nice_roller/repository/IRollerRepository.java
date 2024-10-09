@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface IRollerRepository extends JpaRepository<Roller, Long> {
-    List<Roller> findByDisponibilitéTrue();
+    List<Roller> findByDisponibiliteTrue();
 }

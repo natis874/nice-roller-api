@@ -5,7 +5,7 @@ import com.app.nice_roller.entities.Client;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface ClientMapper {
 
     ClientDTO toDTO(Client client);
