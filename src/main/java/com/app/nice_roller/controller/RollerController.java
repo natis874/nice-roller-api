@@ -26,17 +26,17 @@ public class RollerController {
 
     @PostMapping
     public ResponseEntity<RollerDTO> createRoller(@RequestBody RollerDTO rollerDTO) {
-        return ResponseEntity.ok(rollerService.saveRoller(rollerDTO));
+        return ResponseEntity.ok(rollerService.createRoller(rollerDTO));
+    }
+
+    @GetMapping("/available")
+    public ResponseEntity<List<RollerDTO>> getAvailableRollers() {
+        return ResponseEntity.ok(rollerService.getAvailableRollers());
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteRoller(@PathVariable Long id) {
         rollerService.deleteRoller(id);
         return ResponseEntity.noContent().build();
-    }
-
-    @GetMapping("/available")
-    public ResponseEntity<List<RollerDTO>> getAvailableRollers() {
-        return ResponseEntity.ok(rollerService.getAvailableRollers());
     }
 }
