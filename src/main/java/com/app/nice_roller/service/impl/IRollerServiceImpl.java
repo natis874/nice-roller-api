@@ -1,10 +1,11 @@
-package com.app.nice_roller.service;
+package com.app.nice_roller.service.impl;
 
 import com.app.nice_roller.dto.RollerDTO;
 import com.app.nice_roller.entities.Roller;
 import com.app.nice_roller.exception.RollerNotFoundException;
 import com.app.nice_roller.mapper.RollerMapper;
 import com.app.nice_roller.repository.IRollerRepository;
+import com.app.nice_roller.service.IRollerService;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +14,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@Transactional
 public class IRollerServiceImpl implements IRollerService {
 
     @Autowired
@@ -38,7 +38,7 @@ public class IRollerServiceImpl implements IRollerService {
     }
 
     @Override
-    public RollerDTO saveRoller(RollerDTO rollerDTO) {
+    public RollerDTO createRoller(RollerDTO rollerDTO) {
         Roller roller = rollerMapper.toEntity(rollerDTO);
         Roller savedRoller = rollerRepository.save(roller);
         return rollerMapper.toDTO(savedRoller);
